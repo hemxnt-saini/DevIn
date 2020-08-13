@@ -4,6 +4,9 @@ const app = express();
 
 connectDB();
 
+//Body Parser Middlware
+app.use(express.json({ extended: false }));
+
 app.get("/", (req, res) => {
   res.send("API running");
 });
