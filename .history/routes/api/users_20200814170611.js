@@ -5,7 +5,7 @@ const User = require("../../models/User");
 const gravatar = require("gravatar");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const config = require("config");
+const confiq = require("config");
 
 //@route POST api/users
 //@desc Register User
@@ -62,15 +62,9 @@ router.post(
         },
       };
 
-      jwt.sign(
-        payload,
-        config.get("jwtSecret"),
-        { expiresIn: 360000 },
-        (err, token) => {
-          if (err) throw err;
-          res.json({ token });
-        }
-      );
+      jwt.verify(payload, config.get("jwtSecret"));
+
+      res.send("User Registered");
     } catch (err) {
       console.error(err.message);
       res.status(500).send("Server Error");

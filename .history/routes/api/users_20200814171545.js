@@ -56,7 +56,7 @@ router.post(
 
       await user.save();
 
-      const payload = {
+      /*const payload = {
         user: {
           id: user.id,
         },
@@ -70,7 +70,7 @@ router.post(
           if (err) throw err;
           res.json({ token });
         }
-      );
+      );*/
     } catch (err) {
       console.error(err.message);
       res.status(500).send("Server Error");
