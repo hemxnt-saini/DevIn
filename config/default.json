@@ -1,6 +1,6 @@
 {
   "mongoURI": "mongodb+srv://Hemant:hemant7@devin.p71g7.mongodb.net/test?retryWrites=true&w=majority",
   "jwtSecret": "My Secret Code",
-  "githubCliendId": "",
-  "githubSecret": ""
+  "githubClientId": "c0febb062dde75c26224",
+  "githubSecret": "b678d6f300d41cc72d5e578d3d845f05f1a4bcec"
 }
