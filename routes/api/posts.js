@@ -189,4 +189,44 @@ router.post(
   }
 );
 
+//@route DELETE api/posts/comment/:id/:comment_id(FOR THIS CASE we want both id of post and commentID to be delete )
+//@desc  DELETE Comment on  post
+//@access Private
+
+router.delete("/comment/:id/:comment_id", auth, async (req, res) => {
+  try {
+    const post = await Post.findById(req.params.id);
+
+    //find out comment to be deleted using cID
+    //const comment = await post.comments.findById(req.params.comment_id);
+    const comment = post.comments.find(
+      (comment) => comment.id === req.params.comment_id
+    );
+
+    //Make suire comment exist
+    if (!comment) {
+      return res.status(404).json({ msg: "Comment Not Found" });
+    }
+
+    //check user(is this the right user who made that comment only he allows to de;lete the comment)
+    if (comment.user.toString() !== req.user.id) {
+      //req.user.id here means the login user
+      return res.status(401).json({ msg: "User not authorized" });
+    }
+
+    //get remove index
+    const removeIndex = post.comments
+      .map((comment) => comment.user.toString())
+      .indexOf(req.user.id);
+
+    post.comments.splice(removeIndex, 1);
+
+    await post.save();
+    res.json(post.comments);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
+});
+
 module.exports = router;
