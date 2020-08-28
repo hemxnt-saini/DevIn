@@ -18,7 +18,7 @@ Dashboard.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  auth: auth.state,
+  auth: state.auth,
   profile: state.profile,
 });
 
