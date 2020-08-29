@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { getCurrentProfile } from "../../action/profile";
 import Spinner from "../layout/Spinner";
+import { Link } from "react-router-dom";
 
 const Dashboard = ({
   getCurrentProfile,
@@ -24,7 +25,12 @@ const Dashboard = ({
       {profile != null ? (
         <Fragment>has</Fragment>
       ) : (
-        <Fragment>has not</Fragment>
+        <Fragment>
+          <p>You haven't created Profile yet, please have one..!!</p>
+          <Link to='/create-profile' className='btn btn-primary my-1'>
+            Create Profile
+          </Link>
+        </Fragment>
       )}
     </Fragment>
   );
