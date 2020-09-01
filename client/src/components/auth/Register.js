@@ -70,7 +70,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         </div>
         <div className='form-group'>
           <input
-            type='email'
+            type='text'
             placeholder='Email Address'
             name='email'
             value={email}
