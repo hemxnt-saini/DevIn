@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 
 const DashboardActions = () => {
   return (
-    <div class='dash-buttons'>
-      <Link to='/edit-profile' class='btn btn-light'>
-        <i class='fa fa-user-circle text-primary'></i> Edit Profile
+    <div className='dash-buttons'>
+      <Link to='/edit-profile' className='btn btn-light'>
+        <i className='fa fa-user-circle text-primary' /> Edit Profile
       </Link>
-      <Link to='/add-experience' class='btn btn-light'>
-        <i class='fa fa-black-tie text-primary'></i> Add Experience
+      <Link to='/add-experience' className='btn btn-light'>
+        <i className='fa fa-black-tie text-primary' /> Add Experience
       </Link>
-      <Link to='/add-education' class='btn btn-light'>
-        <i class='fa fa-graduation-cap text-primary'></i> Add Education
+      <Link to='/add-education' className='btn btn-light'>
+        <i className='fa fa-graduation-cap text-primary' /> Add Education
       </Link>
     </div>
   );
