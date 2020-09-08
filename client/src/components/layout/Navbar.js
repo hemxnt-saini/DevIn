@@ -8,10 +8,14 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
     <ul>
       <li>
-        <Link to='/profiles'>Developers</Link>
+        <Link to='/profiles' className='nav-head'>
+          Developers
+        </Link>
       </li>
       <li>
-        <Link to='/posts'>Posts</Link>
+        <Link to='/posts' className='nav-head'>
+          Posts
+        </Link>
       </li>
       <li>
         <Link to='/dashboard'>
@@ -31,22 +35,28 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const guestLinks = (
     <ul>
       <li>
-        <Link to='/profiles'>Developers</Link>
+        <Link to='/profiles' className='nav-head'>
+          Developers
+        </Link>
       </li>
       <li>
-        <Link to='/register'>Register</Link>
+        <Link to='/register' className='nav-head'>
+          Register
+        </Link>
       </li>
       <li>
-        <Link to='/login'>Login</Link>
+        <Link to='/login' className='nav-head'>
+          Login
+        </Link>
       </li>
     </ul>
   );
 
   return (
-    <nav className='navbar bg-dark'>
+    <nav className='navbar bg-d-dark'>
       <h1>
-        <Link to='/'>
-          <i className='fa fa-code' /> DevConnector
+        <Link to='/' className='nav-head-1'>
+          <i className='fa fa-code' /> DevIn
         </Link>
       </h1>
       {!loading && (
