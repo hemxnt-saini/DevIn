@@ -1,11 +1,14 @@
 /* Global Styles */
 :root {
-  --primary-color: #17a2b8;
+  --primary-color: #ff8800; /*#17a2b8*/
   --dark-color: #343a40;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
 * {
   box-sizing: border-box;
@@ -49,6 +52,16 @@ img {
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+  font-family: "Righteous", cursive;
+  letter-spacing: 0.2rem;
+}
+.nav-head {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 1.2rem;
+}
+.nav-head-1 {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 1.8rem;
 }
 
 .large {
@@ -60,6 +73,7 @@ img {
 .lead {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  font-family: "Bubblegum Sans", cursive;
 }
 
 .text-center {
@@ -68,6 +82,7 @@ img {
 
 .text-primary {
   color: var(--primary-color);
+  font-family: "Righteous", cursive;
 }
 
 .text-dark {
@@ -178,6 +193,9 @@ img {
 .alert-dark {
   background: var(--dark-color);
   color: #fff;
+}
+.bg-d-dark {
+  background-color: rgb(0, 0, 0);
 }
 
 .btn-danger,
@@ -308,7 +326,7 @@ button {
   z-index: 1;
   width: 100%;
   top: 0;
-  border-bottom: solid 1px var(--primary-color);
+  border-bottom: solid 1px#fff;
   opacity: 0.9;
 }
 
@@ -333,7 +351,7 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
-  background: url("./img/showcase.jpg") no-repeat center center/cover;
+  background: url("./img/5.jpg") no-repeat center center/cover;
   height: 100vh;
 }
 
