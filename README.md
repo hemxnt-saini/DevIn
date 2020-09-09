@@ -16,8 +16,5 @@ Routes are Authenticated and Validated in Backend with JSONWebToken and React St
 #### `FRONTEND`:
    #### Axios, React-Router-Dom, Redux, Redux-Thunk, React-Redux, Redux-devtools-extension. 
 
-### SKILLS:
-#### NodeJS, MongoDb, React, Redux , CSS3.
-
 ### DEPLOY:
   #### Heroku : 
