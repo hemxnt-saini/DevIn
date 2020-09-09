@@ -5,7 +5,7 @@ Developing using MERN stack and to be deployed on Heroku.
 Routes are Authenticated and Validated in Backend with JSONWebToken and React State is centralised with Redux-Store in Frontend .
 
 ### PROJECT SPECIFICATIONS :
-Social Networking Platform for Developers, developed using MERN
+* Social Networking Platform for Developers, developed using MERN stack and deployed on Heroku.
 
 
 ### PACKAGES :
