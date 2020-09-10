@@ -1,8 +1,5 @@
 # DevIn.
-
-Social Networking Platform for Developers.
-Developing using MERN stack and to be deployed on Heroku.
-Routes are Authenticated and Validated in Backend with JSONWebToken and React State is centralised with Redux-Store in Frontend .
+  Social Networking Platform for Developers, Let's Connect, Communicate, Help and Share ..!!!
 
 ### PROJECT SPECIFICATIONS :
 * Social Networking Platform for Developers, developed using MERN stack and deployed on Heroku.
