@@ -506,6 +506,11 @@ button {
   margin-bottom: 0.5rem;
 }
 
+.inputf {
+  border-radius: 10px;
+  border: 1px solid #000 !important;
+}
+
 /* Mobile Styles */
 @media (max-width: 700px) {
   .container {
