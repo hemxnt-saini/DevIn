@@ -38,6 +38,7 @@ const Login = ({ login, isAuthenticated }) => {
             name='email'
             value={email}
             onChange={onChange}
+            className='inputf'
             required
           />
         </div>
@@ -48,6 +49,7 @@ const Login = ({ login, isAuthenticated }) => {
             name='password'
             value={password}
             onChange={onChange}
+            className='inputf'
             minLength='6'
           />
         </div>
