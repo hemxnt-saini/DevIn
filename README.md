@@ -14,4 +14,4 @@
    #### Axios, React-Router-Dom, Redux, Redux-Thunk, React-Redux, Redux-devtools-extension. 
 
 ### DEPLOY:
-  #### Heroku : 
+  #### Heroku : Heroku CLI
