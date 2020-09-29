@@ -1,7 +1,7 @@
 # DevIn.
   Social Networking Platform for Developers, Let's Connect, Communicate, Help and Share ..!!!
   
- ### ``REACT`` ``X`` ``NODE``
+ #### ``REACTJS`` ``X`` ``NODEJS``
 
 ### PROJECT SPECIFICATIONS :
 * Social Networking Platform for Developers, developed using MERN stack and deployed on Heroku.
