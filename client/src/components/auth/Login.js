@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { login } from "../../actions/auth";
+import { login } from "../../action/auth";
 
 const Login = ({ login, isAuthenticated }) => {
   const [formData, setFormData] = useState({
@@ -12,14 +12,16 @@ const Login = ({ login, isAuthenticated }) => {
 
   const { email, password } = formData;
 
-  const onChange = (e) =>
+  const onChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     login(email, password);
   };
 
+  //Redirect if LoggedIn,
   if (isAuthenticated) {
     return <Redirect to='/dashboard' />;
   }
@@ -28,31 +30,34 @@ const Login = ({ login, isAuthenticated }) => {
     <Fragment>
       <h1 className='large text-primary'>Sign In</h1>
       <p className='lead'>
-        <i className='fa fa-user' /> Sign Into Your Account
+        <i className='fa fa-user'></i> Sign Into Your Account
       </p>
-      <form className='form' onSubmit={onSubmit}>
+      <form className='form' onSubmit={(e) => onSubmit(e)}>
         <div className='form-group'>
           <input
             type='email'
             placeholder='Email Address'
             name='email'
             value={email}
-            onChange={onChange}
-            className='inputf'
+            onChange={(e) => onChange(e)}
             required
           />
+          <small className='form-text'>
+            This site uses Gravatar so if you want a profile image, use a
+            Gravatar email
+          </small>
         </div>
         <div className='form-group'>
           <input
             type='password'
             placeholder='Password'
             name='password'
-            value={password}
-            onChange={onChange}
-            className='inputf'
             minLength='6'
+            value={password}
+            onChange={(e) => onChange(e)}
           />
         </div>
+
         <input type='submit' className='btn btn-primary' value='Login' />
       </form>
       <p className='my-1'>

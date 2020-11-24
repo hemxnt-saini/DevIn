@@ -2,21 +2,11 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { logout } from "../../actions/auth";
+import { logout } from "../../action/auth";
 
 const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
     <ul>
-      <li>
-        <Link to='/profiles' className='nav-head'>
-          Developers
-        </Link>
-      </li>
-      <li>
-        <Link to='/posts' className='nav-head'>
-          Posts
-        </Link>
-      </li>
       <li>
         <Link to='/dashboard'>
           <i className='fa fa-user' />{" "}
@@ -25,40 +15,34 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       </li>
       <li>
         <a onClick={logout} href='#!'>
-          <i className='fa fa-sign-out-alt' />{" "}
+          <i className='fa fa-sign-out' />{" "}
           <span className='hide-sm'>Logout</span>
         </a>
       </li>
     </ul>
   );
-
   const guestLinks = (
     <ul>
       <li>
-        <Link to='/profiles' className='nav-head'>
-          Developers
-        </Link>
+        <a href='#!'>Developers</a>
       </li>
       <li>
-        <Link to='/register' className='nav-head'>
-          Register
-        </Link>
+        <Link to='/register'>Register</Link>
       </li>
       <li>
-        <Link to='/login' className='nav-head'>
-          Login
-        </Link>
+        <Link to='/login'>Login</Link>
       </li>
     </ul>
   );
 
   return (
-    <nav className='navbar bg-d-dark'>
+    <nav className='navbar bg-dark'>
       <h1>
-        <Link to='/' className='nav-head-1'>
-          <i className='fa fa-code' /> DevIn
+        <Link to='/'>
+          <i className='fa fa-code'></i> DevIn
         </Link>
       </h1>
+
       {!loading && (
         <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
       )}
