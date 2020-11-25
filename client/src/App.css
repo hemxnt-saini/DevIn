@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
 /* Global Styles */
 :root {
-  --primary-color: #17a2b8;
-  --dark-color: #343a40;
-  --light-color: #f4f4f4;
+  --primary-color: #fa9613;
+  --dark-color: #021d38;
+  --light-color: #f3f4f5;
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
@@ -14,7 +15,8 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -245,10 +247,10 @@ img {
   color: #888;
 }
 
-.form input[type='text'],
-.form input[type='email'],
-.form input[type='password'],
-.form input[type='date'],
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"],
 .form select,
 .form textarea {
   display: block;
@@ -258,7 +260,7 @@ img {
   border: 1px solid #ccc;
 }
 
-.form input[type='submit'],
+.form input[type="submit"],
 button {
   font: inherit;
 }
@@ -333,7 +335,7 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
-  background: url('./img/showcase.jpg') no-repeat center center/cover;
+  background: url("./img/7.jpg") no-repeat center center/cover;
   height: 100vh;
 }
 
@@ -364,10 +366,10 @@ button {
 .profile-grid {
   display: grid;
   grid-template-areas:
-    'top top'
-    'about about'
-    'exp edu'
-    'github github';
+    "top top"
+    "about about"
+    "exp edu"
+    "github github";
   grid-gap: 1rem;
 }
 
@@ -550,11 +552,11 @@ button {
 
   .profile-grid {
     grid-template-areas:
-      'top'
-      'about'
-      'exp'
-      'edu'
-      'github';
+      "top"
+      "about"
+      "exp"
+      "edu"
+      "github";
   }
 
   .profile-about .skills {
@@ -574,4 +576,21 @@ button {
   .post button {
     padding: 0.3rem 0.4rem;
   }
+}
+
+.main-head {
+  font-family: "Bubblegum Sans", cursive;
+}
+.main-para {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+.curvy {
+  border-radius: 10px;
+  font-weight: 500;
+}
+.nav-links {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

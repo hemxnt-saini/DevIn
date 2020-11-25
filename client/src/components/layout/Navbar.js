@@ -7,22 +7,22 @@ import { logout } from '../../actions/auth';
 const Navbar = ({ auth: { isAuthenticated }, logout }) => {
   const authLinks = (
     <ul>
-      <li>
-        <Link to="/profiles">Developers</Link>
+      <li className="nav-links">
+        <Link to="/profiles"><i className="fa fa-leaf" style={{marginRight: "7px"}} />DEVELOPERS</Link>
       </li>
-      <li>
-        <Link to="/posts">Posts</Link>
+      <li className="nav-links">
+        <Link to="/posts"><i className="fa fa-comments" style={{marginRight: "7px"}} />POSTS</Link>
       </li>
-      <li>
+      <li className="nav-links">
         <Link to="/dashboard">
           <i className="fas fa-user" />{' '}
-          <span className="hide-sm">Dashboard</span>
+          <span className="hide-sm">DASHBOARD</span>
         </Link>
       </li>
-      <li>
+      <li className="nav-links">
         <a onClick={logout} href="#!">
           <i className="fas fa-sign-out-alt" />{' '}
-          <span className="hide-sm">Logout</span>
+          <span className="hide-sm">LOGOUT</span>
         </a>
       </li>
     </ul>
@@ -30,14 +30,14 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
 
   const guestLinks = (
     <ul>
-      <li>
-        <Link to="/profiles">Developers</Link>
+      <li className="nav-links">
+        <Link to="/profiles"><i className="fa fa-leaf" style={{marginRight: "7px"}} />DEVELOPERS</Link>
       </li>
-      <li>
-        <Link to="/register">Register</Link>
+      <li className="nav-links">
+        <Link to="/register">REGISTER</Link>
       </li>
-      <li>
-        <Link to="/login">Login</Link>
+      <li className="nav-links">
+        <Link to="/login">LOGIN</Link>
       </li>
     </ul>
   );
@@ -46,7 +46,7 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
     <nav className="navbar bg-dark">
       <h1>
         <Link to="/">
-          <i className="fas fa-code" /> DevConnector
+          <i className="fas fa-code" /> DevIn
         </Link>
       </h1>
       <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
