@@ -99,6 +99,7 @@ const ProfileForm = ({
             name="company"
             value={company}
             onChange={onChange}
+            autoComplete="off"
           />
           <small className="form-text">
             Could be your own company or one you work for
@@ -111,6 +112,8 @@ const ProfileForm = ({
             name="website"
             value={website}
             onChange={onChange}
+            autoComplete="off"
+
           />
           <small className="form-text">
             Could be your own or a company website
@@ -123,6 +126,8 @@ const ProfileForm = ({
             name="location"
             value={location}
             onChange={onChange}
+            autoComplete="off"
+
           />
           <small className="form-text">
             City & state suggested (eg. Boston, MA)
@@ -147,6 +152,8 @@ const ProfileForm = ({
             name="githubusername"
             value={githubusername}
             onChange={onChange}
+            autoComplete="off"
+
           />
           <small className="form-text">
             If you want your latest repos and a Github link, include your
@@ -159,6 +166,8 @@ const ProfileForm = ({
             name="bio"
             value={bio}
             onChange={onChange}
+            autoComplete="off"
+
           />
           <small className="form-text">Tell us a little about yourself</small>
         </div>
@@ -184,6 +193,8 @@ const ProfileForm = ({
                 name="twitter"
                 value={twitter}
                 onChange={onChange}
+            autoComplete="off"
+
               />
             </div>
 
@@ -195,6 +206,8 @@ const ProfileForm = ({
                 name="facebook"
                 value={facebook}
                 onChange={onChange}
+            autoComplete="off"
+
               />
             </div>
 
@@ -206,6 +219,8 @@ const ProfileForm = ({
                 name="youtube"
                 value={youtube}
                 onChange={onChange}
+            autoComplete="off"
+
               />
             </div>
 
@@ -217,6 +232,8 @@ const ProfileForm = ({
                 name="linkedin"
                 value={linkedin}
                 onChange={onChange}
+            autoComplete="off"
+
               />
             </div>
 
@@ -228,6 +245,8 @@ const ProfileForm = ({
                 name="instagram"
                 value={instagram}
                 onChange={onChange}
+            autoComplete="off"
+
               />
             </div>
           </Fragment>

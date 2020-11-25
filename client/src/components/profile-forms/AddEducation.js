@@ -50,7 +50,8 @@ const AddEducation = ({ addEducation, history }) => {
             name="school"
             value={school}
             onChange={onChange}
-            required
+            autoComplete="off"
+            
           />
         </div>
         <div className="form-group">
@@ -60,7 +61,8 @@ const AddEducation = ({ addEducation, history }) => {
             name="degree"
             value={degree}
             onChange={onChange}
-            required
+            autoComplete="off"
+            
           />
         </div>
         <div className="form-group">
@@ -70,6 +72,7 @@ const AddEducation = ({ addEducation, history }) => {
             name="fieldofstudy"
             value={fieldofstudy}
             onChange={onChange}
+            autoComplete="off"
           />
         </div>
         <div className="form-group">

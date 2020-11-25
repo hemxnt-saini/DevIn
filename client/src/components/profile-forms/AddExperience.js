@@ -42,7 +42,8 @@ const AddExperience = ({ addExperience, history }) => {
             name="title"
             value={title}
             onChange={onChange}
-            required
+            autoComplete="off"
+            
           />
         </div>
         <div className="form-group">
@@ -52,7 +53,8 @@ const AddExperience = ({ addExperience, history }) => {
             name="company"
             value={company}
             onChange={onChange}
-            required
+            autoComplete="off"
+
           />
         </div>
         <div className="form-group">
@@ -60,6 +62,7 @@ const AddExperience = ({ addExperience, history }) => {
             type="text"
             placeholder="Location"
             name="location"
+            autoComplete="off"
             value={location}
             onChange={onChange}
           />

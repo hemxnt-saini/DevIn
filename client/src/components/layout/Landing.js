@@ -14,8 +14,8 @@ const Landing = ({ isAuthenticated }) => {
         <div className='landing-inner'>
           <h1 className='x-large main-head'>DevIn</h1>
           <p className='lead main-para'>
-            Create your developer profile, share posts and get help from
-            other developers.
+             Create your developer profile, share posts and get help from
+            other developers.            
           </p>
           <div className='buttons main-buttons'>
             <Link to='/register' className='btn btn-primary curvy'>

@@ -38,7 +38,7 @@ const Login = ({ login, isAuthenticated }) => {
             name="email"
             value={email}
             onChange={onChange}
-            required
+            autoComplete="off"
           />
         </div>
         <div className="form-group">

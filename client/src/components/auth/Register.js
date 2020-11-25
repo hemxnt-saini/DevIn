@@ -45,6 +45,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             name="name"
             value={name}
             onChange={onChange}
+            autoComplete="off"
           />
         </div>
         <div className="form-group">
@@ -54,6 +55,8 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             name="email"
             value={email}
             onChange={onChange}
+            autoComplete="off"
+
           />
           <small className="form-text">
             This site uses Gravatar so if you want a profile image, use a
