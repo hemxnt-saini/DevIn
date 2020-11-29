@@ -1,4 +1,5 @@
 node_modules/
+config/production.json
+config/default.json
+client/build
 Deploy.txt
-default.json
-production.json
