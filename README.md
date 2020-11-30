@@ -1,8 +1,8 @@
 # DevIn.
-
+Create your developer profile, share posts and get help from other developers.
 Social Networking Platform for Developers, Let's Connect, Communicate, Help and Share..!!!
 
-#### `REACTJS` `X` `NODEJS`
+##### `REACTJS` `X` `NODEJS`
 
 ### PROJECT SPECIFICATIONS :
 
@@ -12,14 +12,11 @@ Social Networking Platform for Developers, Let's Connect, Communicate, Help and 
 
 ### PACKAGES :
 
-#### `BACKEND`:
+##### `BACKEND`:
+##### Express, Express-Validator, Bcryptjs, Config, Gravatar, JSONwebToken, Mongoose, Request.
 
-#### Express, Express-Validator, Bcryptjs, Config, Gravatar, JSONwebToken, Mongoose, Request.
-
-#### `FRONTEND`:
-
-#### Axios, React-Router-Dom, Redux, Redux-Thunk, React-Redux, Redux-devtools-extension.
+##### `FRONTEND`:
+##### Axios, React-Router-Dom, Redux, Redux-Thunk, React-Redux, Redux-devtools-extension.
 
 ### DEPLOY:
-
-#### Heroku : Heroku CLI
+##### Heroku : Heroku CLI
