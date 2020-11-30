@@ -1,6 +1,6 @@
 # DevIn.
-Create your developer profile, share posts and get help from other developers.
-Social Networking Platform for Developers, Let's Connect, Communicate, Help and Share..!!!
+- Create your developer profile, share posts and get help from other developers.
+- Social Networking Platform for Developers, Let's Connect, Communicate, Help and Share..!!!
 
 ##### `REACTJS` `X` `NODEJS`
 
